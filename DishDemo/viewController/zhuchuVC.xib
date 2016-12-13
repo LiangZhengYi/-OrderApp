@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="zhuchuVC">
+            <connections>
+                <outlet property="lbl" destination="kM9-e1-0wb" id="GrA-Cg-VII"/>
+                <outlet property="lblImage" destination="igZ-mY-Hfi" id="U0S-m0-osd"/>
+                <outlet property="leftTableV" destination="0cc-kT-b7L" id="uqO-wa-FBs"/>
+                <outlet property="myOrder" destination="f4h-he-gsK" id="o7d-4Q-yql"/>
+                <outlet property="sclloV" destination="MvK-g8-6RK" id="eCp-ft-fnB"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bgp3.png" translatesAutoresizingMaskIntoConstraints="NO" id="yJJ-Uq-g5e">
+                    <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                </imageView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MvK-g8-6RK">
+                    <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                </scrollView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bgp31.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ure-86-y1b">
+                    <rect key="frame" x="0.0" y="-7" width="1024" height="762"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bgp33.png" translatesAutoresizingMaskIntoConstraints="NO" id="Cal-B5-QKm">
+                    <rect key="frame" x="662" y="58" width="319" height="652"/>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0cc-kT-b7L">
+                    <rect key="frame" x="670" y="160" width="303" height="540"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="nYW-RP-WJ4"/>
+                        <outlet property="delegate" destination="-1" id="ang-Lb-5mP"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f4h-he-gsK">
+                    <rect key="frame" x="67" y="706" width="150" height="37"/>
+                    <state key="normal" image="myorder.png"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jss-tL-V1c">
+                    <rect key="frame" x="10" y="648" width="105" height="45"/>
+                    <state key="normal" image="dcbtn.png"/>
+                    <connections>
+                        <action selector="acBtn:" destination="-1" eventType="touchUpInside" id="N44-1X-48o"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="charm_level_heart_four.png" translatesAutoresizingMaskIntoConstraints="NO" id="igZ-mY-Hfi">
+                    <rect key="frame" x="212" y="693" width="79" height="75"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kM9-e1-0wb">
+                    <rect key="frame" x="234" y="715" width="34" height="31"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bgp3.png" width="1024" height="768"/>
+        <image name="bgp31.png" width="1024" height="768"/>
+        <image name="bgp33.png" width="320" height="757"/>
+        <image name="charm_level_heart_four.png" width="42" height="42"/>
+        <image name="dcbtn.png" width="105" height="45"/>
+        <image name="myorder.png" width="171" height="37"/>
+    </resources>
+</document>
